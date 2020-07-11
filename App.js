@@ -14,9 +14,9 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="List" component={List} />
-        <Stack.Screen name="Detail" component={Detail} />
-        <Stack.Screen name="Form" component={Form} />
+        <Stack.Screen options={{ title: "일기 목록" }} name="List" component={List} />
+        <Stack.Screen options={{ title: "일기 상세" }} name="Detail" component={Detail} />
+        <Stack.Screen options={{ title: "일기 작성" }} name="Form" component={Form} />
       </Stack.Navigator>
     </NavigationContainer>
   );
